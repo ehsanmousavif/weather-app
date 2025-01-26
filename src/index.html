@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel=" stylesheet"/>
+    <link href="styles.css" rel=" stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Document</title>
 </head>
-<body class="">
 
+<body class="bg-black">
+    <!--root project-->
+    <section
+        class="root max-w-[30rem] m-auto flex flex-col items-center justify-around bg-[#ffe040] min-h-screen font-sans pt-6 pb-auto relative overflow-x-hidden ">
+        <input type="text" class=" search-city w-2/3 rounded-2xl  border-none px-3 py-2" />
+        <button
+            class="search-button mt-6 w-auto bg-black py-[8px] px-3 rounded-2xl text-[#ffe040] whitespace-nowrap cursor-pointer
+            hover:text-white  ">Search
+            your city weather</button>
+        <div class="city-name text-xl font-bold font-800 "></div>
+        <div class="date text-lg font-500  text-[#ffe040] px-8 py-2 text-center bg-black rounded-full">
+    </div>
+        <div class="main-weather text-xl font-400 px-3 py-2  "></div>
+        <div class="temperature-p flex items-center justify-center gap-[1.5rem]   ">
+            <div class="temperature text-[5rem] w-auto"></div>
+        </div>
+        <div class="weather-next-days flex items-center justify-center gap-2 ">
+            <div
+                class="  w-1/5 h-36 px-1 py-2 border border-solid border-[3.5px] rounded-xl border-black flex flex-col items-center text-center gap-[2rem] ">
+                <span class="font-bold text-[0.8rem]">min temps:</span>
+                <div class="min-temp text-[0.8rem] text-xl font-extrabold"></div>
+            </div>
+            <div class=" w-1/5 h-36 px-1 py-2 border border-solid border-[3.5px] rounded-xl border-black flex flex-col items-center text-center gap-[2rem]">
+                <span class="font-bold text-[0.8rem]">max temps:</span>
+                <div class=" max-temp text-[0.8rem] text-xl font-extrabold"></div>
+            </div>
+            <div
+                class="  w-1/5 h-36 px-1 py-2 border border-solid border-[3.5px] rounded-xl border-black flex flex-col items-center text-center gap-[2rem]">
+                <span class="font-bold text-[0.8rem]">wind speed:</span>
+                <div class=" wind-speed text-[0.8rem] text-xl font-extrabold"></div>
+            </div>
+            <div class="  four-day w-1/5 h-36 px-1 py-2 border border-solid border-[3.5px] rounded-xl border-black flex flex-col items-center text-center gap-[2rem]">
+                <span class="font-bold text-[0.8rem]">humidity per:</span>
+                <div class="humidity text-[0.8rem]  text-xl font-extrabold
+                "></div>
+            </div>
+        </div>
+    </section>
+    <!--root project-->
+
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 </html>
